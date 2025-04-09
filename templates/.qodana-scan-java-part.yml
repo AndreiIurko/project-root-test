@@ -1,0 +1,10 @@
+include:
+  - component: $CI_SERVER_FQDN/qodana/qodana/qodana-gitlab-ci@v2025.1
+    inputs:
+      job-name: qodana-java-part
+      args: --source-directory,java-part,--config,java-qodana.yaml
+      artifact-name: qodana-backend
+
+qodana-java-part:
+  variables:
+    QODANA_USE_NIGHTLY: true

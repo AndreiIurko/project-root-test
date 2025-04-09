@@ -1,4 +1,4 @@
 version: 1.0
 profile:
   name: qodana.starter
-linter: registry.jetbrains.team/p/sa/containers/qodana-js:2024.3-nightly
+linter: jetbrains/qodana-js:2024.3

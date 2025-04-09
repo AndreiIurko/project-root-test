@@ -1,0 +1,10 @@
+include:
+  - component: $CI_SERVER_FQDN/qodana/qodana/qodana-gitlab-ci@v2025.1
+    inputs:
+      job-name: qodana-typescript-part
+      args: --source-directory,vite-typescript-part,--config,js-qodana.yaml
+      artifact-name: qodana-frontend
+
+qodana-typescript-part:
+  variables:
+    QODANA_USE_NIGHTLY: true
