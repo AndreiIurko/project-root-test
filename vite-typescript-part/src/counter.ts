@@ -9,6 +9,9 @@ export function setupCounter(element: HTMLButtonElement) {
   }
   let count = counter
   count = count
+  if (false) {
+    console.log(count)
+  }
   element.addEventListener('click', () => setCounter(counter + 1))
   setCounter(0)
 }
